@@ -27,7 +27,9 @@ nextflow run nf-core/rnaseq -profile BUTER_HPC,test --outdir results
 
 # For offline 
 nf-core download nf-core/rnaseq
-cd nf-core-rnaseq-3.10.1/workflow/
+
+cd nf-core-rnaseq-<downloaded_version>/workflow/
+
 ## Execute for testing:
 nextflow run main.nf -profile BUTTER_HPC,test --outdir results_test
 
